@@ -29,7 +29,10 @@ public class Application {
             repository.salvar(new Cliente("Alex","alexxx@email.com","Rua Olegario maciel  n° 1245"));
             repository.salvar(new Cliente("Bob","bob@email.com","Rua sem saida n° 23"));
             List<Cliente> returnAll = repository.getAll();
-            returnAll.forEach(System.out::println);
+           // returnAll.forEach(System.out::println);
+
+            List<Cliente> getBy = repository.getByName("Marcelo");
+            //getBy.forEach(System.out::println);
         };
     }
 

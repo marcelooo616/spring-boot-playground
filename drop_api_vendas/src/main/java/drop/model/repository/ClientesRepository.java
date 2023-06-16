@@ -32,7 +32,11 @@ public class ClientesRepository {
     }
 
     public List<Cliente> getAll(){
-        return jdbcTemplate.query(OperacaoSQL.SELECT_ALL.getSql(), new RowMapper<Cliente>() {
+        return jdbcTemplate.query(OperacaoSQL.SELECT_ALL.getSql(), getRowMapper());
+    }
+
+    private RowMapper<Cliente> getRowMapper() {
+        return new RowMapper<Cliente>() {
             @Override
             public Cliente mapRow(ResultSet resultSet, int i) throws SQLException {
                 Integer id = resultSet.getInt("id");
@@ -41,9 +45,16 @@ public class ClientesRepository {
                 String endereco = resultSet.getString("endereco");
                 return new Cliente(id,nome,email,endereco);
             }
-        });
+        };
     }
 
+    public List<Cliente> getByName(String nome){
+        return jdbcTemplate.query(
+                OperacaoSQL.SELECT_ALL.getSql(),
+                new Object[]{"%" + nome + "%"},
+                getRowMapper()
+        );
+    }
 
 
 }
