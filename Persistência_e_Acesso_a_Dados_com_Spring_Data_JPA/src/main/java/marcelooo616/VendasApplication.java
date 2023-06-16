@@ -24,8 +24,11 @@ public class VendasApplication {
             clientes.salvar(new Cliente("Marcelo"));
             clientes.salvar(new Cliente("Pedro"));
 
-
             List<Cliente> getAll = clientes.obterTodos();
+            getAll.forEach(System.out::println);
+
+
+           /* List<Cliente> getAll = clientes.obterTodos();
             getAll.forEach(System.out::println);
             System.out.println("Atualizando clientes!");
             getAll.forEach(c ->{
@@ -38,15 +41,14 @@ public class VendasApplication {
             /*System.out.println("deletando  clientes!");
             clientes.obterTodos().forEach(c -> {
                 clientes.deletar(c);
-            });*/
+            });
 
             getAll = clientes.obterTodos();
             if (getAll.isEmpty()){
                 System.out.println("Nenhum ckliente encontrado");
             }else{
                 getAll.forEach(System.out::println);
-            }
-
+            }*/
 
 
 
