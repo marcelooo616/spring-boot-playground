@@ -27,18 +27,16 @@ public class VendasApplication {
             List<Cliente> getAll = clientes.obterTodos();
             getAll.forEach(System.out::println);
 
-
-           /* List<Cliente> getAll = clientes.obterTodos();
-            getAll.forEach(System.out::println);
             System.out.println("Atualizando clientes!");
             getAll.forEach(c ->{
                 c.setNome(c.getNome() + "atui");
                 clientes.atualizar(c);
             });
+
             System.out.println("buscando  clientes!");
             clientes.obterProNome("Mar").forEach(System.out::println);
 
-            /*System.out.println("deletando  clientes!");
+            System.out.println("deletando  clientes!");
             clientes.obterTodos().forEach(c -> {
                 clientes.deletar(c);
             });
@@ -48,7 +46,7 @@ public class VendasApplication {
                 System.out.println("Nenhum ckliente encontrado");
             }else{
                 getAll.forEach(System.out::println);
-            }*/
+            }
 
 
 
