@@ -1,6 +1,11 @@
 package drop.model.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "cliente")
@@ -20,6 +25,14 @@ public class Cliente {
     @Column(name = "endereco", length = 100)
     private String endereco;
 
+    @OneToMany(mappedBy = "cliente",cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnoreProperties("cliente")
+    private List<Pedido> pedido = new ArrayList<>();
+
+   /* @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnoreProperties("cliente")
+    private List<Comentario> comentario = new ArrayList<>();*/
+
     public Cliente() {
     }
 
@@ -37,6 +50,7 @@ public class Cliente {
         this.email = email;
         this.endereco = endereco;
     }
+
 
 
 
@@ -72,6 +86,14 @@ public class Cliente {
         this.endereco = endereco.toLowerCase();
     }
 
+    public List<Pedido> getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(List<Pedido> pedido) {
+        this.pedido = pedido;
+    }
+
     /*
     *
     * Nesse exemplo, o método beforeSave() é anotado com @PrePersist e @PreUpdate. Ele será executado
@@ -99,4 +121,6 @@ public class Cliente {
                 ", endereco='" + endereco + '\'' +
                 '}';
     }
+
+
 }

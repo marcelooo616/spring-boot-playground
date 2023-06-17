@@ -1,8 +1,12 @@
 package drop.model.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import net.minidev.json.annotate.JsonIgnore;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -29,6 +33,11 @@ public class Produto {
     @Column(name = "estoque")
     private Integer estoque;
 
+    @OneToMany(mappedBy = "produto", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnoreProperties("produto")
+    private List<Comentario> comentarios = new ArrayList<>();
+
+
 
     public Produto() {
     }
@@ -50,6 +59,14 @@ public class Produto {
         this.estoque = estoque;
     }
 
+
+   /* public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
+    }*/
 
     public Integer getId() {
         return id;
