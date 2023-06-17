@@ -1,10 +1,11 @@
 package marcelooo616.domain.repository;
 
 
+import marcelooo616.domain.entity.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
 
-public interface Produtos extends JpaRepository<Produtos, Integer> {
+public interface Produtos extends JpaRepository<Produto, Integer> {
 
 }

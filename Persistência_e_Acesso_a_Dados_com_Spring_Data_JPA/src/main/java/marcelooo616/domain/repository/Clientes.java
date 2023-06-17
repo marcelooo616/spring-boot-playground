@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface Clientes extends JpaRepository<Cliente, Integer> {
 
-    //@Query(value = " select c from Cliente c where c.nome like :nome ")
+
     @Query(value = " select * from Cliente c where c.nome like '%:nome%' ", nativeQuery = true)
     List<Cliente> encontraProNome(@Param("nome") String nome);
 
@@ -18,4 +18,9 @@ public interface Clientes extends JpaRepository<Cliente, Integer> {
     Cliente findOneByNome(String nome);
 
     boolean existsByNome(String nome);
+
+    @Query("  select c from Cliente c left join fetch c.pedidos where c.id = :id ")
+    Cliente findClienteFetchPedidos(@Param("id") Integer id);
+
+
 }
