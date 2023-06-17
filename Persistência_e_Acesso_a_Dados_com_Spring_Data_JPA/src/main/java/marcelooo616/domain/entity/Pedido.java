@@ -3,6 +3,7 @@ package marcelooo616.domain.entity;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 
 @Entity
@@ -22,6 +23,18 @@ public class Pedido {
 
     @Column(name = "total", length = 20, precision = 2)
     private BigDecimal total;
+
+    @OneToMany(mappedBy = "pedido")
+    private List<ItemPedido> pedidos;
+
+
+    public List<ItemPedido> getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(List<ItemPedido> pedidos) {
+        this.pedidos = pedidos;
+    }
 
     public Integer getId() {
         return id;
@@ -54,4 +67,6 @@ public class Pedido {
     public void setTotal(BigDecimal total) {
         this.total = total;
     }
+
+
 }

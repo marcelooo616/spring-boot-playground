@@ -9,7 +9,7 @@ public class Produto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "produto_id")
     private Integer id;
 
     @Column(name = "descricao", length = 100)
@@ -41,4 +41,6 @@ public class Produto {
     public void setPreco(BigDecimal preco) {
         this.preco = preco;
     }
+
+
 }
