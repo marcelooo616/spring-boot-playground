@@ -3,18 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8d982405-dd7d-4edd-a280-cf4e5a8da300" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/target/classes/marcelooo616/VendasApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/target/classes/marcelooo616/domain/entity/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/target/classes/marcelooo616/domain/entity/ItemPedido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/target/classes/marcelooo616/domain/entity/Pedido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/target/classes/marcelooo616/domain/entity/Produto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/target/classes/marcelooo616/domain/repositorio/Clientes$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/target/classes/marcelooo616/domain/repositorio/Clientes.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/drop/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drop/controller/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/controller/ClientesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drop/model/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/model/entities/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/wdwddataminer.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/drop/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/drop/model/repository/ClientesRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/model/repository/ClientesRepository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/drop/controller/ClientesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/controller/ClientesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/drop/model/entities/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/model/entities/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/drop/model/repository/ClientesRepository$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/drop/model/repository/ClientesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/model/repository/ClientesRepository.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,39 +25,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/entities/Produto.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="361">
+                    <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/drop/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1032">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -71,10 +69,14 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/drop/model/enums/OperacaoSQL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/drop/model/entities/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/drop/controller/ClientesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/drop/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drop/model/entities/Produto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drop/controller/ProdutoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drop/model/enums/Categoria.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drop/model/repository/ProdutoRepository.java" />
       </list>
     </option>
   </component>
@@ -85,16 +87,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1932" />
@@ -147,6 +140,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="drop" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drop_api_vendas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drop_api_vendas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drop" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,7 +159,34 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="drop" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drop_api_vendas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drop_api_vendas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drop" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drop_api_vendas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drop_api_vendas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drop" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drop_api_vendas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drop_api_vendas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,10 +253,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1932" height="1045" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24111949" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24434876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -236,7 +264,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44960362" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.400906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -244,7 +272,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32997763" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -254,6 +282,34 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24434876" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44960362" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295583" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
@@ -266,7 +322,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/wdwddataminer.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -280,57 +336,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/drop/controller/ClientesController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.4.RELEASE/spring-data-commons-2.2.4.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="150">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/entities/Produto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/enums/OperacaoSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/entities/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/drop/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="248">
+          <caret line="41" column="120" selection-start-line="41" selection-start-column="120" selection-end-line="41" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/repository/ProdutoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drop/controller/ProdutoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drop/controller/ClientesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/enums/OperacaoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/enums/Categoria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/entities/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        <state relative-caret-position="250">
+          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
           </folding>
         </state>
       </provider>

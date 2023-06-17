@@ -1,10 +1,23 @@
 package drop.model.entities;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "cliente")
 public class Cliente {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "cliente_id")
     private Integer id;
+
+    @Column(name = "nome", length = 100)
     private String nome;
+
+    @Column(name = "email", length = 100)
     private String email;
+
+    @Column(name = "endereco", length = 100)
     private String endereco;
 
     public Cliente() {
@@ -56,8 +69,26 @@ public class Cliente {
     }
 
     public void setEndereco(String endereco) {
-        this.endereco = endereco;
+        this.endereco = endereco.toLowerCase();
     }
+
+    /*
+    *
+    * Nesse exemplo, o método beforeSave() é anotado com @PrePersist e @PreUpdate. Ele será executado
+    * antes de persistir uma nova entidade no banco de dados ou antes de atualizar uma entidade existente.
+    * Dentro desse método, você verifica se o campo endereco não é nulo e, em seguida, o converte para minúsculas
+    * usando o método toLowerCase(). Dessa forma, o valor do campo endereco será convertido
+    * automaticamente para minúsculas antes de ser persistido ou atualizado no banco de dados.
+    *
+    * */
+    @PrePersist
+    @PreUpdate
+    private void beforeSave() {
+        if (endereco != null) {
+            endereco = endereco.toLowerCase();
+        }
+    }
+
 
     @Override
     public String toString() {

@@ -1,11 +1,12 @@
 package drop.controller;
 
 
-import ch.qos.logback.core.net.server.Client;
+
 import drop.model.entities.Cliente;
 import drop.model.repository.ClientesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -19,6 +20,16 @@ public class ClientesController {
 
     @GetMapping("/clientes")
     public List<Cliente> getAllClientes(){
-        return repository.getAll();
+        return repository.findAll();
+    }
+
+    @GetMapping("/clientes/nome/{nome}")
+    public List<Cliente> getByName(@PathVariable String nome){
+        return repository.findByName(nome);
+    }
+
+    @GetMapping("/clientes/endereco/{endereco}")
+    public List<Cliente> getByEndereco(@PathVariable String endereco){
+        return repository.findByEndereco(endereco.toLowerCase());
     }
 }
