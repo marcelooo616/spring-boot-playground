@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d982405-dd7d-4edd-a280-cf4e5a8da300" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Persistência_e_Acesso_a_Dados_com_Spring_Data_JPA/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RestAPi/RestAPi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drop/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drop/controller/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/controller/ClientesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drop/model/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/model/entities/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drop/model/entities/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/model/entities/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drop/model/repository/ClientesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/drop/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/drop/controller/ClientesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/controller/ClientesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/drop/model/entities/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/model/entities/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/drop/model/repository/ClientesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drop/model/repository/ClientesRepository.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,7 +17,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,11 +73,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1932" />
-    <option name="height" value="1045" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-4" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -84,7 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,10 +156,18 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="drop_api_vendas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drop_api_vendas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -221,9 +229,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
+    <frame x="1912" y="-4" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25941873" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26638025" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -283,13 +292,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/wdwddataminer.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -572,6 +574,13 @@
             <element signature="e#2759#2760#0" expanded="true" />
             <element signature="e#2797#2798#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
         </state>
       </provider>
     </entry>
