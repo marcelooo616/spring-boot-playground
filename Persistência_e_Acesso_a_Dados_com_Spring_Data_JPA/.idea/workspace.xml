@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="185aae0d-c7f7-48a7-966b-1bf532aaa564" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/marcelooo616/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marcelooo616/VendasApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marcelooo616/domain/repositorio/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marcelooo616/domain/repositorio/Clientes.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/marcelooo616/domain/repositorio/Clientes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="312">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/main/java/marcelooo616/domain/entity/ItemPedido.java" />
         <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
         <option value="$PROJECT_DIR$/src/main/java/marcelooo616/domain/entity/Cliente.java" />
-        <option value="$PROJECT_DIR$/src/main/java/marcelooo616/domain/repositorio/Clientes.java" />
         <option value="$PROJECT_DIR$/src/main/java/marcelooo616/VendasApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/marcelooo616/domain/repositorio/Clientes.java" />
       </list>
     </option>
   </component>
@@ -455,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/marcelooo616/domain/repositorio/Clientes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="312">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
