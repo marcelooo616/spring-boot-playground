@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="185aae0d-c7f7-48a7-966b-1bf532aaa564" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../RestAPi/RestAPi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/entity/ItemPedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/entity/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/entity/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/repository/Clientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/repository/ItemsPedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/repository/Pedidos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RestAPi/src/main/java/com/github/marcelooo616/domain/repository/Produtos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drop_api_vendas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drop_api_vendas/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="185aae0d-c7f7-48a7-966b-1bf532aaa564" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -297,7 +286,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="7" width="1932" height="1045" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49582636" visible="true" weight="0.18137783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
