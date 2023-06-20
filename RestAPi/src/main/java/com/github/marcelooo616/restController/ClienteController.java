@@ -5,15 +5,18 @@ import com.github.marcelooo616.domain.entity.Cliente;
 import com.github.marcelooo616.domain.repository.Clientes;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
 
 
-@Controller
+@RestController
+@RequestMapping("/api/clientes")
 public class ClienteController {
 
 
@@ -24,54 +27,50 @@ public class ClienteController {
         this.clientes = clientes;
     }
 
-    @GetMapping(value = "/api/clientes/{id}")
-    @ResponseBody
-    public ResponseEntity<Cliente> getClienteById(@PathVariable("id") Integer id){
-       Optional<Cliente> cliente =  clientes.findById(id);
+    @GetMapping(value = "/{id}")
+    public Cliente getClienteById(@PathVariable("id") Integer id){
+       return clientes
+               .findById(id)
+               .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Cliente não encontrado" ));
 
-       if (cliente.isPresent()){
-           return ResponseEntity.ok(cliente.get());
-       }
-
-       return ResponseEntity.notFound().build();
     }
 
-    @PostMapping("/api/clientes/cadastro")
-    @ResponseBody
-    public ResponseEntity<Cliente> save(@RequestBody  Cliente cliente){
-        Cliente clienteSalvo = clientes.save(cliente);
-        return ResponseEntity.ok(clienteSalvo);
+    @PostMapping("/cadastro")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Cliente save(@RequestBody  Cliente cliente){
+        return clientes.save(cliente);
+
     }
-    @DeleteMapping("/api/clientes/{id}/delete")
-    @ResponseBody
-    public ResponseEntity<Cliente> delete(@PathVariable Integer id){
 
-        Optional<Cliente> cliente = clientes.findById(id);
+    @DeleteMapping("/{id}/delete")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable Integer id){
+         clientes.findById(id)
+                 .map(cliente -> {
+                     clientes.delete(cliente);
+                     return cliente;
+                 })
+                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente deletado com suceso !!"));
 
-        if(cliente.isPresent()){
-            clientes.delete((cliente.get()));
-            return ResponseEntity.noContent().build();
-        }
 
-        return ResponseEntity.notFound().build();
     }
 
 
-    @PutMapping("api/clientes/{id}")
-    @ResponseBody
-    public ResponseEntity update(@PathVariable Integer id,@RequestBody Cliente cliente){
-        return clientes
-                .findById(id)
-                .map(clienteExixtente -> {
-                    cliente.setId(clienteExixtente.getId());
+
+    @PutMapping("/{id}/atualizar")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+
+    public Cliente update(@PathVariable Integer id,@RequestBody Cliente cliente){
+        return clientes.findById(id).map(clienteAtulizado -> {
+                    cliente.setId(clienteAtulizado.getId());
                     clientes.save(cliente);
-                    return ResponseEntity.noContent().build();
-                }).orElseGet(() -> ResponseEntity.notFound().build());
+                    return  clienteAtulizado;
+                }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
 
     }
 
-    @GetMapping("/api/clientes")
-    public ResponseEntity find(Cliente filtro){
+    @GetMapping
+    public List<Cliente> find(Cliente filtro){
         //TODO revisar Exemple
         ExampleMatcher matcher = ExampleMatcher
                 .matching()
@@ -80,8 +79,8 @@ public class ClienteController {
                         ExampleMatcher.StringMatcher.CONTAINING);
 
         Example example = Example.of(filtro, matcher);
-        List<Cliente> lista = clientes.findAll(example);
-        return ResponseEntity.ok(lista);
+        return clientes.findAll(example);
+
 
     }
 
