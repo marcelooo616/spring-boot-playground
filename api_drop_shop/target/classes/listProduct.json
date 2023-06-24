@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "description": "Descrição do Produto 1",
+      "promotion_status": true,
+      "stock": 10,
+      "unit_price": 19.99,
+      "promotion_price": 14.99
+    },
+    {
+      "description": "Descrição do Produto 2",
+      "promotion_status": false,
+      "stock": 5,
+      "unit_price": 9.99,
+      "promotion_price": null
+    },
+    {
+      "description": "Descrição do Produto 3",
+      "promotion_status": true,
+      "stock": 8,
+      "unit_price": 24.99,
+      "promotion_price": 19.99
+    },
+    {
+      "description": "Descrição do Produto 4",
+      "promotion_status": false,
+      "stock": 3,
+      "unit_price": 14.99,
+      "promotion_price": null
+    },
+    {
+      "description": "Descrição do Produto 5",
+      "promotion_status": true,
+      "stock": 12,
+      "unit_price": 29.99,
+      "promotion_price": 24.99
+    },
+    {
+      "description": "Descrição do Produto 6",
+      "promotion_status": false,
+      "stock": 7,
+      "unit_price": 11.99,
+      "promotion_price": null
+    },
+    {
+      "description": "Descrição do Produto 7",
+      "promotion_status": true,
+      "stock": 6,
+      "unit_price": 17.99,
+      "promotion_price": 13.99
+    },
+    {
+      "description": "Descrição do Produto 8",
+      "promotion_status": false,
+      "stock": 9,
+      "unit_price": 21.99,
+      "promotion_price": null
+    },
+    {
+      "description": "Descrição do Produto 9",
+      "promotion_status": true,
+      "stock": 4,
+      "unit_price": 16.99,
+      "promotion_price": 12.99
+    },
+    {
+      "description": "Descrição do Produto 10",
+      "promotion_status": false,
+      "stock": 2,
+      "unit_price": 13.99,
+      "promotion_price": null
+    }
+  ]
+}

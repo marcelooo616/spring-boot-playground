@@ -1,0 +1,64 @@
+{
+  "images": [
+    {
+      "image_url": "https://example.com/image1.jpg",
+      "product": {
+        "id": 1
+      }
+    },
+    {
+      "image_url": "https://example.com/image2.jpg",
+      "product": {
+        "id": 1
+      }
+    },
+    {
+      "image_url": "https://example.com/image3.jpg",
+      "product": {
+        "id": 2
+      }
+    },
+    {
+      "image_url": "https://example.com/image4.jpg",
+      "product": {
+        "id": 2
+      }
+    },
+    {
+      "image_url": "https://example.com/image5.jpg",
+      "product": {
+        "id": 3
+      }
+    },
+    {
+      "image_url": "https://example.com/image6.jpg",
+      "product": {
+        "id": 3
+      }
+    },
+    {
+      "image_url": "https://example.com/image7.jpg",
+      "product": {
+        "id": 4
+      }
+    },
+    {
+      "image_url": "https://example.com/image8.jpg",
+      "product": {
+        "id": 4
+      }
+    },
+    {
+      "image_url": "https://example.com/image9.jpg",
+      "product": {
+        "id": 5
+      }
+    },
+    {
+      "image_url": "https://example.com/image10.jpg",
+      "product": {
+        "id": 5
+      }
+    }
+  ]
+}
