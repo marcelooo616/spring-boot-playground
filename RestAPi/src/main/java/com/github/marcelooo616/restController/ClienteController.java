@@ -69,6 +69,11 @@ public class ClienteController {
 
     }
 
+    @GetMapping("/aaa")
+    public String message(){
+        return "aaaaaaaaaaaaaaaaa";
+    }
+
     @GetMapping
     public List<Cliente> find(Cliente filtro){
         //TODO revisar Exemple
