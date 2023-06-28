@@ -17,10 +17,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -50,11 +50,20 @@ public class PedidoServiceImpl implements PedidoService {
         List<ItemPedido> itemsPedido = converterItems(pedido, dto.getItems());
         pedidosRepository.save(pedido);
         itemsPedidoRepository.saveAll(itemsPedido);
-        pedido.setPedidos(itemsPedido);
+        pedido.setItens(itemsPedido);
 
 
         return pedido;
     }
+
+
+    @Override
+    public Optional<Pedido> obterPedidoCompleto(Integer id) {
+        return pedidosRepository.findByIdFetchItens(id);
+    }
+
+
+
 
     private List<ItemPedido> converterItems(Pedido pedido, List<ItemPedidoDTO> items){
 
@@ -77,12 +86,9 @@ public class PedidoServiceImpl implements PedidoService {
                     return  itemPedido;
 
                 }).collect(Collectors.toList());
-
-
-
-
-
-
-
     }
+
+
+
+
 }

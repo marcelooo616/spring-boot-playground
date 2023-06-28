@@ -29,11 +29,11 @@ public class Pedido {
     private BigDecimal total;
 
     @OneToMany(mappedBy = "pedido")
-    private List<ItemPedido> pedidos;
+    private List<ItemPedido> itens;
 
 
     public List<ItemPedido> getPedidos() {
-        return pedidos;
+        return itens;
     }
 
 

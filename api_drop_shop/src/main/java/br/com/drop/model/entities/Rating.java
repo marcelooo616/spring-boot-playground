@@ -2,12 +2,20 @@ package br.com.drop.model.entities;
 
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 @Entity
 @Table(name = "rating")
 public class Rating {
@@ -32,48 +40,5 @@ public class Rating {
     @JoinColumn(name = "product_id")
     private Product product;
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public BigDecimal getProduct_note() {
-        return product_note;
-    }
-
-    public void setProduct_note(BigDecimal product_note) {
-        this.product_note = product_note;
-    }
-
-    public String getReview() {
-        return review;
-    }
-
-    public void setReview(String review) {
-        this.review = review;
-    }
-
-    public LocalDate getEvaluation_date() {
-        return evaluation_date;
-    }
-
-    public void setEvaluation_date(LocalDate evaluation_date) {
-        this.evaluation_date = evaluation_date;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
-    @PrePersist
-    public void prePersist() {
-        evaluation_date = LocalDate.now();
-    }
 }

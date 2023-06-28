@@ -5,8 +5,6 @@ import br.com.drop.model.entities.Rating;
 import br.com.drop.repository.RatingRepository;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.util.List;
 
 @RestController
