@@ -3,11 +3,12 @@ package br.com.drop.controller;
 
 import br.com.drop.model.entities.PersonalData;
 import br.com.drop.model.entities.User;
+import br.com.drop.model.exeption.BusinessRule;
 import br.com.drop.repository.PersonalDateRepository;
 import br.com.drop.repository.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
+
 
 
 
@@ -33,8 +34,8 @@ public class PersonalDataController {
 
     @GetMapping("/user/{user_id}")
     public PersonalData data(@PathVariable("user_id") Integer user_id){
-        User usuario = userRepository.findById(user_id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"user não encontrado" ));
-        return personalDataRepository.findById(usuario.getPersonalData_data().getId()).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"dados não encontrado" ));
+        User usuario = userRepository.findById(user_id).orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND,"user não encontrado" ));
+        return personalDataRepository.findById(usuario.getPersonalData_data().getId()).orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND,"dados não encontrado" ));
 
     }
 

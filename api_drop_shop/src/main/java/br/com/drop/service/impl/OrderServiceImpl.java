@@ -1,4 +1,4 @@
-package br.com.drop.service.impl.impl;
+package br.com.drop.service.impl;
 
 
 import br.com.drop.model.dto.ItemDTO;
@@ -12,13 +12,15 @@ import br.com.drop.repository.ItemsRepository;
 import br.com.drop.repository.OrderRepository;
 import br.com.drop.repository.ProductRepository;
 import br.com.drop.repository.UserRepository;
-import br.com.drop.service.impl.OrderService;
+import br.com.drop.service.OrderService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -37,7 +39,7 @@ public class OrderServiceImpl implements OrderService {
 
         Integer user_id = dto.getUser();
         User user = userRepository.findById(user_id)
-                .orElseThrow(() -> new BusinessRule("Invalid user code!"));
+                .orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND,"Invalid user code!"));
 
         Order order = new Order();
         order.setDate(LocalDate.now());
@@ -54,10 +56,15 @@ public class OrderServiceImpl implements OrderService {
         return order;
     }
 
+    @Override
+    public Optional<Order> showOrder(Integer id) {
+        return orderRepository.findByIdFetchItens(id);
+    }
+
     private List<Items> convertItems(Order order, List<ItemDTO> items){
 
         if(items.isEmpty()){
-            throw  new BusinessRule("It is not possible to place an order without items.");
+            throw  new BusinessRule(HttpStatus.NOT_FOUND,"It is not possible to place an order without items.");
         }
 
         return items
@@ -66,7 +73,7 @@ public class OrderServiceImpl implements OrderService {
 
                     Integer product_id = dto.getProduct();
                     Product product = productRepository.findById(product_id)
-                            .orElseThrow(() -> new BusinessRule("Invalid product code!" + product_id));
+                            .orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND,"Invalid product code!" + product_id));
 
                     Items itemsOrder = new Items();
                     itemsOrder.setAmount(dto.getAmount());

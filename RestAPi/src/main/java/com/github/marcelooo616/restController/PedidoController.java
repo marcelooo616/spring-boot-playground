@@ -3,6 +3,8 @@ package com.github.marcelooo616.restController;
 
 import com.github.marcelooo616.domain.entity.ItemPedido;
 import com.github.marcelooo616.domain.entity.Pedido;
+import com.github.marcelooo616.domain.enums.StatusPedido;
+import com.github.marcelooo616.rest.dto.AtualizacaoStatusPedidoDTO;
 import com.github.marcelooo616.rest.dto.InformacaoItemPedidoDTO;
 import com.github.marcelooo616.rest.dto.InformacoesPedidioDTO;
 import com.github.marcelooo616.rest.dto.PedidoDTO;
@@ -46,6 +48,16 @@ public class PedidoController {
 
     }
 
+    @PatchMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updateStatus(@PathVariable Integer id, @RequestBody AtualizacaoStatusPedidoDTO dto){
+
+        String novoStatus = dto.getNovoStatus();
+        service.atualizaStatus(id, StatusPedido.valueOf(novoStatus));
+
+
+    }
+
     private  InformacoesPedidioDTO converter(Pedido pedido){
         return InformacoesPedidioDTO
                 .builder()
@@ -54,6 +66,7 @@ public class PedidoController {
                 .cpf(pedido.getCliente().getCpf())
                 .nomeCliente(pedido.getCliente().getNome())
                 .total(pedido.getTotal())
+                .status(pedido.getStatus().name())
                 .items(converter(pedido.getPedidos()))
                 .build();
     }

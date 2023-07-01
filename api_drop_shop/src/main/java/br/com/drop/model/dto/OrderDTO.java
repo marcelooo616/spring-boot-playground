@@ -1,7 +1,7 @@
 package br.com.drop.model.dto;
 
 
-import br.com.drop.model.entities.Items;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

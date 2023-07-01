@@ -3,6 +3,7 @@ package br.com.drop.controller;
 
 import br.com.drop.model.entities.Contact;
 import br.com.drop.model.entities.User;
+import br.com.drop.model.exeption.BusinessRule;
 import br.com.drop.repository.ContactRepository;
 import br.com.drop.repository.UserRepository;
 import org.springframework.http.HttpStatus;
@@ -36,7 +37,7 @@ public class ContactController {
 
     @GetMapping("/{user_id}")
     public List<Contact> searchForId(@PathVariable("user_id") Integer user_id){
-        User user = userRepository.findById(user_id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"user não encontrado" ));
+        User user = userRepository.findById(user_id).orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND,"user não encontrado" ));
         return contactRepository.findByUserId(user_id);
     }
 
@@ -47,7 +48,7 @@ public class ContactController {
                 .map(contact -> {
                     contactRepository.delete(contact);
                     return contact;
-                }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Deletion failed, user not found or does not exist "));
+                }).orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND, "Deletion failed, user not found or does not exist "));
 
     }
 

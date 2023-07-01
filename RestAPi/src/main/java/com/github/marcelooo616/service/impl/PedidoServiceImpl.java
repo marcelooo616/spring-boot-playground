@@ -5,10 +5,12 @@ import com.github.marcelooo616.domain.entity.Cliente;
 import com.github.marcelooo616.domain.entity.ItemPedido;
 import com.github.marcelooo616.domain.entity.Pedido;
 import com.github.marcelooo616.domain.entity.Produto;
+import com.github.marcelooo616.domain.enums.StatusPedido;
 import com.github.marcelooo616.domain.repository.Clientes;
 import com.github.marcelooo616.domain.repository.ItemsPedido;
 import com.github.marcelooo616.domain.repository.Pedidos;
 import com.github.marcelooo616.domain.repository.Produtos;
+import com.github.marcelooo616.exception.PedidoNaoEncontradoExceptio;
 import com.github.marcelooo616.exception.RegraNegocioException;
 import com.github.marcelooo616.rest.dto.ItemPedidoDTO;
 import com.github.marcelooo616.rest.dto.PedidoDTO;
@@ -46,6 +48,7 @@ public class PedidoServiceImpl implements PedidoService {
         pedido.setTotal(dto.getTotal());
         pedido.setDataPedito(LocalDate.now());
         pedido.setCliente(cliente);
+        pedido.setStatus(StatusPedido.REALIZADO);
 
         List<ItemPedido> itemsPedido = converterItems(pedido, dto.getItems());
         pedidosRepository.save(pedido);
@@ -62,7 +65,15 @@ public class PedidoServiceImpl implements PedidoService {
         return pedidosRepository.findByIdFetchItens(id);
     }
 
-
+    @Override
+    @Transactional
+    public void atualizaStatus(Integer id, StatusPedido statusPedido) {
+        pedidosRepository.findById(id)
+                .map(pedido -> {
+                    pedido.setStatus(statusPedido);
+                    return pedidosRepository.save(pedido);
+                }).orElseThrow( () -> new PedidoNaoEncontradoExceptio());
+    }
 
 
     private List<ItemPedido> converterItems(Pedido pedido, List<ItemPedidoDTO> items){

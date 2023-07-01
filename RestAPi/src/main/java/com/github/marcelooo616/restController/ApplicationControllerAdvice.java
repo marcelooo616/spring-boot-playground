@@ -1,6 +1,7 @@
 package com.github.marcelooo616.restController;
 
 
+import com.github.marcelooo616.exception.PedidoNaoEncontradoExceptio;
 import com.github.marcelooo616.exception.RegraNegocioException;
 import com.github.marcelooo616.restController.dto.ApiErrors;
 import org.springframework.http.HttpStatus;
@@ -17,6 +18,14 @@ public class ApplicationControllerAdvice {
     public ApiErrors handkeRegraNegocioException(RegraNegocioException e){
         String mensagemErro = e.getMessage();
         return new ApiErrors(mensagemErro);
+    }
+
+
+    @ExceptionHandler(PedidoNaoEncontradoExceptio.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiErrors handlePedidoNotFoundException(PedidoNaoEncontradoExceptio e){
+        return new ApiErrors(e.getMessage());
+
     }
 
 

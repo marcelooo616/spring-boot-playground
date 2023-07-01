@@ -1,12 +1,14 @@
 package br.com.drop.controller;
 
+import br.com.drop.model.dto.UserDTO;
 import br.com.drop.model.entities.User;
+import br.com.drop.model.exeption.BusinessRule;
 import br.com.drop.repository.UserRepository;
+import br.com.drop.service.UserService;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -15,9 +17,17 @@ import java.util.List;
 public class UserController {
 
     UserRepository userRepository;
+    UserService userService;
 
-    public UserController(UserRepository userRepository) {
+    public UserController(UserRepository userRepository, UserService userService) {
         this.userRepository = userRepository;
+        this.userService = userService;
+    }
+
+    @PostMapping("/insertDTO")
+    public User save(@RequestBody UserDTO userDTO){
+        User user = userService.save(userDTO);
+        return user;
     }
 
     @PostMapping("/insert")
@@ -35,7 +45,7 @@ public class UserController {
     @GetMapping("/{user_id}")
     public User searchForId(@PathVariable("user_id") Integer user_id){
         return userRepository.findById(user_id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
+                .orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND, "User not found"));
 
     }
 
@@ -59,7 +69,7 @@ public class UserController {
                     user.setId(update_user.getId());
                     userRepository.save(user);
                     return update_user;
-    }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Update failed, user not found or does not exist "));
+    }).orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND, "Update failed, user not found or does not exist "));
 
     }
 
@@ -71,7 +81,7 @@ public class UserController {
                 .map(user -> {
                     userRepository.delete(user);
                     return user;
-                }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Deletion failed, user not found or does not exist "));
+                }).orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND, "Deletion failed, user not found or does not exist "));
     }
 
 
