@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.List;
 
 @NoArgsConstructor
@@ -31,6 +32,9 @@ public class User {
     @Column(name = "user_password")
     private String password;
 
+    @Column(name = "is_ctive_user")
+    private boolean isActive;
+
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     @JoinColumn(name = "personal_data_id")
     @JsonIgnore
@@ -49,6 +53,10 @@ public class User {
     @JsonIgnore
     private  List<Order> orders;
 
+    @PrePersist
+    public void prePersist() {
+        isActive = true;
+    }
 
 
 }

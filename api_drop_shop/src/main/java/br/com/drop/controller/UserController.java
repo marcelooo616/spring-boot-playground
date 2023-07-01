@@ -1,10 +1,12 @@
 package br.com.drop.controller;
 
+import br.com.drop.model.dto.FinalizedAccount;
 import br.com.drop.model.dto.UserDTO;
 import br.com.drop.model.entities.User;
 import br.com.drop.model.exeption.BusinessRule;
 import br.com.drop.repository.UserRepository;
 import br.com.drop.service.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
@@ -12,29 +14,25 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
+
 @RestController
 @RequestMapping("/api/user")
+@RequiredArgsConstructor
 public class UserController {
 
-    UserRepository userRepository;
-    UserService userService;
+    private final UserRepository userRepository;
+    private final UserService userService;
 
-    public UserController(UserRepository userRepository, UserService userService) {
-        this.userRepository = userRepository;
-        this.userService = userService;
-    }
-
-    @PostMapping("/insertDTO")
-    public User save(@RequestBody UserDTO userDTO){
-        User user = userService.save(userDTO);
-        return user;
-    }
 
     @PostMapping("/insert")
     @ResponseStatus(HttpStatus.CREATED)
-    public User save(@RequestBody User user){
-        return userRepository.save(user);
+    public User save(@RequestBody UserDTO userDTO){
+        return  userService.save(userDTO);
+
     }
+
+
 
 
     @GetMapping("/all")
@@ -74,15 +72,15 @@ public class UserController {
     }
 
 
-    @DeleteMapping("/{user_id}/delete")
+    @PatchMapping("/{user_id}/deactivate/account")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable Integer user_id){
-        userRepository.findById(user_id)
-                .map(user -> {
-                    userRepository.delete(user);
-                    return user;
-                }).orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND, "Deletion failed, user not found or does not exist "));
+    public void inactivateUser(@PathVariable Integer user_id){
+        userService.deactivateAccount(user_id);
+
     }
+
+
+
 
 
 

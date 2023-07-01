@@ -5,12 +5,14 @@ import br.com.drop.model.entities.Address;
 import br.com.drop.model.entities.Contact;
 import br.com.drop.model.entities.PersonalData;
 import br.com.drop.model.entities.User;
+import br.com.drop.model.exeption.BusinessRule;
 import br.com.drop.repository.AddresRepository;
 import br.com.drop.repository.ContactRepository;
 import br.com.drop.repository.PersonalDateRepository;
 import br.com.drop.repository.UserRepository;
 import br.com.drop.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,6 +47,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public Optional<Address> getFullAddress(Integer address_id) {
         return addresRepository.findById(address_id);
+    }
+
+    @Override
+    public void deactivateAccount(Integer user_id) {
+        userRepository.findById(user_id)
+                .map( user -> {
+                    user.setActive(false);
+                    return userRepository.save(user);
+                }).orElseThrow(() -> new BusinessRule(HttpStatus.NO_CONTENT, "User not found."));
+
     }
 
     private Address saveAddress(User user_id){

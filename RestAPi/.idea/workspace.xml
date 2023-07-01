@@ -3,42 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="8b8e3b7c-359c-45a5-8684-67879d213923" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/InformacoesPedidioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/InformacoesPedidioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ApplicationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ApplicationControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/PedidoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/impl/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/impl/PedidoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/domain/entity/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/domain/entity/Pedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/rest/dto/InformacoesPedidioDTO$InformacoesPedidioDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/rest/dto/InformacoesPedidioDTO$InformacoesPedidioDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/rest/dto/InformacoesPedidioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/rest/dto/InformacoesPedidioDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/restController/PedidoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/restController/PedidoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/service/impl/PedidoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/marcelooo616/service/impl/PedidoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/dto/ApiErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/dto/ApiErrors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api_drop_shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/AddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/PersonalDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/PersonalDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/RatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/RatingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/dto/ItemDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/exeption/BusinessRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/exeption/BusinessRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/service/impl/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/service/impl/impl/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/AddressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/AddressController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/ContactController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/ContactController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/PersonalDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/PersonalDataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/model/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/src/main/java/br/com/drop/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/RatingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/RatingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/dto/ItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/dto/ItemDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/entities/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/entities/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/exeption/BusinessRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/exeption/BusinessRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/repository/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/service/impl/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/service/impl/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/model/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../api_drop_shop/target/classes/br/com/drop/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,46 +39,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/PedidoController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/PedidoService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ClienteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/AtualizacaoStatusPedidoDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/impl/PedidoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+            <state relative-caret-position="480">
+              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ApplicationControllerAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="519">
+              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,13 +72,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/exception/PedidoNaoEncontradoExceptio.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/dto/ApiErrors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="384">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,15 +108,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/repository/Produtos.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/VendasAplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ProdutoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/ItemPedido.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Produto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/PedidoDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/ItemPedidoDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ClienteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/exception/RegraNegocioException.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/dto/ApiErrors.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/InformacaoItemPedidoDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/repository/Pedidos.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/enums/StatusPedido.java" />
@@ -167,9 +121,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/AtualizacaoStatusPedidoDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/PedidoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/exception/PedidoNaoEncontradoExceptio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ApplicationControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/PedidoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/impl/PedidoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ClienteController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ApplicationControllerAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/dto/ApiErrors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java" />
       </list>
     </option>
   </component>
@@ -192,6 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,55 +286,28 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="vendasAplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPi" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendasAplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPi" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendasAplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPi" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendasAplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPi" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="github" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api_drop_shop" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Meu Computador\IdeaProjects\RestAPi\src\main\java\com\github\marcelooo616" />
+      <recent name="C:\Users\Meu Computador\IdeaProjects\RestAPi\src\main\resources" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.github.marcelooo616.exception" />
       <recent name="com.github.marcelooo616.domain.enums" />
       <recent name="com.github.marcelooo616.rest.dto" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Meu Computador\IdeaProjects\RestAPi\src\main\java\com\github\marcelooo616" />
-      <recent name="C:\Users\Meu Computador\IdeaProjects\RestAPi\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -424,10 +356,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7729306" visible="true" weight="0.20139635" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7729306" visible="true" weight="0.20408164" />
       <window_info id="Structure" order="1" sideWeight="0.22706935" side_tool="true" weight="0.19172932" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -436,7 +368,7 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1196868" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31096196" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -493,13 +425,6 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/CSS Loader Generator Online - 10015 Tools.url" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/PedidoService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/com/github/marcelooo616/domain/entity/ItemPedido.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-259">
@@ -535,16 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ClienteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/repository/ItemsPedido.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -562,13 +477,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -604,16 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/repository/Clientes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/ItemPedido.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -621,13 +519,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -645,16 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/dto/ApiErrors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/enums/StatusPedido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/PedidoDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -705,31 +579,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ProdutoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2471#2472#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/AtualizacaoStatusPedidoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/PedidoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="264">
           <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -737,21 +589,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/exception/PedidoNaoEncontradoExceptio.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/rest/dto/AtualizacaoStatusPedidoDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ApplicationControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,21 +601,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/service/impl/PedidoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        <state relative-caret-position="1080">
+          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/enums/StatusPedido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/exception/PedidoNaoEncontradoExceptio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ProdutoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2471#2472#0" expanded="true" />
+            <element signature="e#2512#2513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/PedidoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        <state relative-caret-position="24">
+          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/repository/Clientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/dto/ApiErrors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ClienteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/restController/ApplicationControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/marcelooo616/domain/entity/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
         </state>
       </provider>
     </entry>

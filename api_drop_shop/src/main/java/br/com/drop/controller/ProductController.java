@@ -2,6 +2,7 @@ package br.com.drop.controller;
 
 
 import br.com.drop.model.entities.Product;
+import br.com.drop.model.exeption.BusinessRule;
 import br.com.drop.repository.ProductRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -27,5 +28,12 @@ public class ProductController {
     @GetMapping("/show/all")
     public List<Product> showAll(){
         return productRepository.findAll();
+    }
+
+
+    @GetMapping("/get/{product_id}")
+    public Product getProductById(@PathVariable Integer product_id){
+        return productRepository.findById(product_id)
+                .orElseThrow(() -> new BusinessRule(HttpStatus.NOT_FOUND,"Id nao encontrado"));
     }
 }

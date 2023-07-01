@@ -10,4 +10,5 @@ public interface UserService {
 
     User save(UserDTO userDTO);
     Optional<Address> getFullAddress(Integer address_id);
+    void deactivateAccount(Integer user_id);
 }
