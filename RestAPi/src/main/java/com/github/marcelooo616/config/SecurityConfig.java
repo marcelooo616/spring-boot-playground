@@ -24,10 +24,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("marcelo")
                 .password(passwordEncoder().encode("123"))
                 .roles("USER");
+
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        super.configure(http);
+        http
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/api/clientes/**")
+                .authenticated()
+                .and()
+                    .formLogin();
+
     }
 }
