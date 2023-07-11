@@ -1,6 +1,7 @@
-package com.github.marcelooo616;
+package com.github.marcelooo616.security.jwt;
 
 
+import com.github.marcelooo616.VendasAplication;
 import com.github.marcelooo616.domain.entity.Usuario;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
